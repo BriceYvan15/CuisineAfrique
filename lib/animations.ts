@@ -5,7 +5,7 @@ export const fadeInUp = {
         y: 0,
         transition: {
             duration: 0.5,
-            ease: "easeOut"
+            ease: [0.16, 1, 0.3, 1]
         }
     }
 }
@@ -17,7 +17,7 @@ export const fadeInLeft = {
         x: 0,
         transition: {
             duration: 0.5,
-            ease: "easeOut"
+            ease: [0.16, 1, 0.3, 1]
         }
     }
 }
@@ -38,7 +38,7 @@ export const hoverScale = {
     boxShadow: "0 10px 30px -10px rgba(0,0,0,0.1)",
     transition: {
         duration: 0.2,
-        ease: "easeInOut"
+        ease: [0.4, 0, 0.2, 1]
     }
 }
 
