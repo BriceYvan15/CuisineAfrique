@@ -56,8 +56,14 @@ export function HowItWorks() {
                             variants={fadeInUp}
                         >
                             <motion.div
-                                variants={hoverScale}
-                                whileHover="visible" // Activate hoverScale on hover
+                                whileHover={{
+                                    scale: 1.02,
+                                    boxShadow: "0 10px 30px -10px rgba(0,0,0,0.1)",
+                                    transition: {
+                                        duration: 0.2,
+                                        ease: [0.4, 0, 0.2, 1]
+                                    }
+                                }}
                                 className="h-full"
                             >
                                 <Card className="h-full p-6 transition-colors border-none bg-white shadow-sm flex flex-col">
