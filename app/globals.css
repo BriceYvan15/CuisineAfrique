@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Brand Colors - Visual Identity Update */
+  --primary: #8B1E1E;
+  /* Bordeaux */
+  --primary-foreground: #ffffff;
+
+  --secondary: #F28C28;
+  /* Warm Orange */
+  --secondary-foreground: #ffffff;
+
+  --accent: #3A8F3A;
+  /* Natural Green */
+  --accent-foreground: #ffffff;
+
+  --muted: #F5F5F5;
+  /* Neutral Light Gray */
+  --muted-foreground: #6b7280;
+
+  --card: #F5F5F5;
+  /* Match neutral secondary for cards */
+  --card-foreground: #171717;
+
+  --border: #e5e7eb;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+}
+
+/* Cross-browser scroll behavior smooth reset */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better mobile viewport handling */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100dvh;
+  width: 100%;
+}
